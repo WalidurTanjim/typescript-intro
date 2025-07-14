@@ -25,4 +25,11 @@ var WebStatus;
     WebStatus["Pending"] = "PENDING";
 })(WebStatus || (WebStatus = {}));
 const res = WebStatus.Error;
-console.log(res);
+const s1 = 0 /* Size.Small */;
+// console.log(s1);
+// [][][] use-case
+// 1: Direction & Position
+// 2: Role or Permission
+// 3: Status code or API call: enum HttpStatus {OK = 200, NotFound = 404}
+// 4: Days of week or months: enum Days {Sum, Mon, Tue, Wed, Thu, Fri, Sat}
+// 5: Toggle state or modes: enum Mode {Dark, Light}
