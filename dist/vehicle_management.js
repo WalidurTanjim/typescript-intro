@@ -8,7 +8,12 @@ class CarClass {
         this.topSpeed = topSpeed;
     }
     canMove() {
-        console.log(`${this.carName}, ${this.carModel}, ${this.brand}, ${this.menufactured}, ${this.topSpeed}`);
+        console.log(`${this.carName}, ${this.carModel}, ${this.brand}, ${this.menufactured}, ${this.topSpeed} km/h`);
+    }
+}
+class ElectricCar extends CarClass {
+    charge() {
+        console.log(`${this.brand} is charging`);
     }
 }
 const newCar = new CarClass("Mercedes Benz", "GLS 450", "Mercedes Benz", 2015, 220);
