@@ -50,10 +50,19 @@ const logInterface = <T>(value: APIResponse<T>): void => {
 
 
 // constraints
-const printLength = <T extends string | string[] | number[]>(item: T): void => {
+const printLength = <T extends {length: number}>(item: T): void => {
     console.log(item.length)
 }
 
 // printLength<string>("MD WALIDUR")
 // printLength<string[]>(['Tanjim', 'Walidur'])
 // printLength<number[]>([0, 1, 2, 3, 4, 5])
+
+interface HasId {
+    id: number
+}
+
+const getId = <T extends HasId>(item: T): number => {
+    return item.id;
+}
+// console.log(getId({id: 123}))

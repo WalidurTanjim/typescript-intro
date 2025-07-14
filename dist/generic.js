@@ -30,6 +30,7 @@ const logInterface = (value) => {
 const printLength = (item) => {
     console.log(item.length);
 };
-printLength("MD WALIDUR");
-printLength(['Tanjim', 'Walidur']);
-printLength([0, 1, 2, 3, 4, 5]);
+const getId = (item) => {
+    return item.id;
+};
+// console.log(getId({id: 123}))
