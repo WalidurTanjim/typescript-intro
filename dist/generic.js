@@ -24,5 +24,12 @@ const numberResponse = {
 const logInterface = (value) => {
     console.log("Log interface value is:", value.data);
 };
-logInterface(userResponse);
-logInterface(numberResponse);
+// logInterface(userResponse);
+// logInterface(numberResponse);
+// constraints
+const printLength = (item) => {
+    console.log(item.length);
+};
+printLength("MD WALIDUR");
+printLength(['Tanjim', 'Walidur']);
+printLength([0, 1, 2, 3, 4, 5]);

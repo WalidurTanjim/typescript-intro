@@ -38,5 +38,22 @@ const numberResponse: APIResponse<number> = {
 const logInterface = <T>(value: APIResponse<T>): void => {
     console.log("Log interface value is:", value.data)
 }
-logInterface(userResponse);
-logInterface(numberResponse);
+// logInterface(userResponse);
+// logInterface(numberResponse);
+
+
+
+
+
+
+
+
+
+// constraints
+const printLength = <T extends string | string[] | number[]>(item: T): void => {
+    console.log(item.length)
+}
+
+// printLength<string>("MD WALIDUR")
+// printLength<string[]>(['Tanjim', 'Walidur'])
+// printLength<number[]>([0, 1, 2, 3, 4, 5])
