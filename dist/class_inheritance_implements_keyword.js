@@ -8,4 +8,4 @@ class Car {
     }
 }
 const myCar = new Car();
-myCar.stop();
+// myCar.stop();
