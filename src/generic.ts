@@ -34,3 +34,9 @@ const numberResponse: APIResponse<number> = {
     success: false,
     data: 25
 }
+
+const logInterface = <T>(value: APIResponse<T>): void => {
+    console.log("Log interface value is:", value.data)
+}
+logInterface(userResponse);
+logInterface(numberResponse);

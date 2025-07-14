@@ -11,6 +11,18 @@ const logNumberOrBoolean = (value) => {
 const genLog = (value) => {
     console.log(value);
 };
-// genLog<string>("Walidur Tanjim");
-// genLog<number>(123);
-// genLog<boolean>(false);
+const userResponse = {
+    success: true,
+    data: {
+        name: "MD WALIDUR RAHMAN TANJIM"
+    }
+};
+const numberResponse = {
+    success: false,
+    data: 25
+};
+const logInterface = (value) => {
+    console.log("Log interface value is:", value.data);
+};
+logInterface(userResponse);
+logInterface(numberResponse);
